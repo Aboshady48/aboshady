@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>عبدالله الشربيني؟</title>
+</head>
+<body>
+	<h1>عبدالله الشربيني؟</h1>
+	<button id="no-btn" onclick="no()">No</button>
+	<button id="yes-btn" onclick="yes()">Yes</button>
+	<script>
+        function no() {
+			var popup = window.open("", "popup", "width=400,height=200");
+			popup.document.write("<h1> عارفك و هجيبك  </h1>");
+		}غور 
+		function yes() {
+			var popup = window.open("", "popup", "width=400,height=200");
+			popup.document.write("<h1>فين ال 15 جني بتاعت عمرو عادل  </h1>");
+		}
+		// Swap the positions of the buttons
+		var noBtn = document.getElementById("no-btn");
+		var yesBtn = document.getElementById("yes-btn");
+		var temp = noBtn.parentNode.removeChild(noBtn);
+		yesBtn.parentNode.insertBefore(temp, yesBtn.nextSibling);
+	</script>
+</body>
+</html>
